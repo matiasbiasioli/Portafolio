@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Matias Muzo</title>
+  <!-- BOOTSRAP ICONS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <!-- MI CSS -->
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <!-- HEADER Y NAVEGADOR -->
+  <header>
+    <div class="header__container">
+      <div class="logo">
+        <h1>
+          <a style="color: #fff;" href="">MBM</a>
+        </h1>
+      </div>
+      <button id="abrir" class="abrir__menu"><i class="bi bi-list"></i></button>
+      <nav id="nav" class="navbar__list">
+        <button id="cerrar" class="cerrar__menu"><i class="bi bi-x-lg"></i></button>
+        <ul class="menu__list">
+          <li><a href="#">SOBRE MÍ</a></li>
+          <li><a href="#">LENGUAJES</a></li>
+          <li><a href="#">PROYECTOS</a></li>
+          <li><a id="contacto__border" href="#">CONTACTO</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- PRINCIPAL SOBRE MÍ -->
+  <main class="main__container">
+    <div class="main__text">
+      <p>Hola! Soy</p>
+      <h2>
+        Matías Biasioli Muzo
+      </h2>
+      <h3>
+        Frontend Developer
+      </h3>
+      <h4><span class="typed"></span></h4>
+    </div>
+    <div class="main__button__container">
+      <a class="main__button1" href="#">Descargar CV</a>
+      <a class="main__button2" href="#">Sobre mí</a>
+    </div>
+  </main>
+  <!-- SOBRE MÍ -->
+  <section class="about__container">
+    <h3>---SOBRE MÍ---</h3>
+    <img class="about__img" src="./Imagenes/cv-color.jpg" alt="perfil">
+    <p>Desde muy chico que me llevo bien con las resolución de problemas y las computadoras
+      Soy una persona muy investigativa y con vocación de servicio. Vengo estudiando y poniendo en práctica diferentes
+      lenguajes del frontend, con diseños responsive y buenas prácticas.
+    </p>
+  </section>
+
+  <!-- Portafolio -->
+  <section class="cards__portfolio">
+    <div>
+      <h3>PROYECTOS</h3>
+    </div>
+    <div class="cards__container">
+      <div class="cards">
+        <img src="./Imagenes/html-icon.png" alt="">
+        <div class="cards__text">
+          <h4>Bonsai & Kokedama's Love</h4>
+          <p>Sitio estatico de tienda virtual de plantas</p>
+          <a href=""><img src="" alt=""></a>
+          <p>HTML CSS3 BOOTSTRAP</p>
+        </div>
+      </div>
+      <div class="cards">
+        <img src="./Imagenes/html-icon.png" alt="">
+        <div class="cards__text">
+          <h4>Eco-Barrier</h4>
+          <p>Sitio estatico para empresa</p>
+          <a href=""><img src="" alt=""></a>
+          <p>HTML CSS3 BOOTSTRAP</p>
+        </div>
+      </div>
+      <div class="cards">
+        <img src="./Imagenes/html-icon.png" alt="">
+        <div class="cards__text">
+          <h4>Asiatic Food</h4>
+          <p>Sitio para restaurant de comidas con carrito de compras</p>
+          <a href=""><img src="" alt=""></a>
+          <p>HTML CSS3 JAVASCRIPT BOOTSTRAP</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- SCRIPT DE TYPED JS -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <!-- MI SCRIPT -->
+  <script src="./index.js"></script>
+</body>
+
+</html>

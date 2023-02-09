@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --color-fondo: #181a1a;
+    --color-tipografia: #00cf5d;
+    --color-tipografia2: #fff;
+}
+body {
+    background-color: var(--color-fondo);
+}
+/* HEADER CONTENT */
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem; 
+}
+.header__container a {
+    text-decoration: none;
+}
+.navbar__list {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    background-color: var(--color-fondo);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem;
+    visibility: hidden;  
+}
+.visible {
+    visibility: visible;
+}
+.hidden {
+    visibility: hidden;
+}
+.navbar__list a {
+    color: var(--color-tipografia2);
+}
+.menu__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+}
+.abrir__menu, 
+.cerrar__menu {
+    font-size: 1.5rem;
+    padding: 6px;
+    border: 0;
+    border-radius: 4px;
+    background-color: var(--color-tipografia);
+}
+
+/* MAIN CONTENT */
+.main__container {
+    text-align: center;
+}
+.main__text p {
+    font-size: 21px;
+    color: var(--color-tipografia)
+}
+.main__text h2 {
+    font-size: 56px;
+    color: var(--color-tipografia2);
+}
+.main__text h3 {
+    font-size: 26px;
+    color: var(--color-tipografia);
+}
+.typed {
+    color: white;
+}
+.main__button__container{
+    margin-top: 1.5rem;
+}
+.main__button1 {
+    font-size: 18px;
+    color: white;
+    margin-right: 10px;
+    padding: 12px 20px;
+    background-color: var(--color-tipografia);
+    border: solid var(--color-tipografia);
+    border-radius: 5px;
+    text-decoration: none;
+}
+.main__button2 {
+    font-size: 18px;
+    color: white;
+    padding: 12px 18px;
+    background-color: var(--color-fondo);
+    border: solid var(--color-tipografia);
+    border-radius: 5px;
+    text-decoration: none;
+}
+/* SOBRE MI SECCION */
+.about__container {
+    color: white;
+    text-align: center;
+    margin-top: 4rem;
+}
+.about__container p {
+    margin-top: 1rem;
+}
+.about__container img {
+    width: 20%;
+    height: 20%;
+    margin-top: 1rem;
+    border-radius: 10px;
+    filter: grayscale(100%);
+}
+.about__container img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+    transition: all .7s;
+}
+/* CARDS PROYECTOS */
+.cards__portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 4rem;
+    color: white;
+}
+.cards {
+    background-color: #1d293a;
+    margin-top: 1rem;
+    padding: 2rem;
+    border-radius: 5px;
+}
+.cards img {
+    filter: grayscale(100%);
+}
+.cards img:hover {
+    filter: grayscale(0%);
+    transition: all .3s;
+}
+.cards__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 1rem;
+}
+/* VISTA DESKTOP<<<<<<<<<<<<<<< */
+@media (min-width: 880px) {
+    body {
+        margin: 0 3rem;
+    }
+    .header__container {
+        display: flex;
+        align-items: center; 
+        margin-top: 1rem;
+    }
+    .menu__list {
+        visibility: visible;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    #contacto__border {
+        border: 2px solid var(--color-tipografia);
+        border-radius: 4px;
+        padding: 5px 15px;
+    }
+    .navbar__list {
+        display: flex;
+        margin: 1.3rem 3rem 0 3rem;
+        padding: 1rem;
+        
+    }
+    .abrir__menu {
+        display: none;
+    }
+    .cerrar__menu {
+        display: none;
+    }
+    /* MAIN CONTENT */
+    .main__text p {
+        font-size: 26px;
+        color: var(--color-tipografia)
+    }
+    .main__text h2 {
+        font-size: 61px;
+        color: var(--color-tipografia2);
+    }
+    .main__text h3 {
+        font-size: 31px;
+        color: var(--color-tipografia);
+    }
+    
+}
