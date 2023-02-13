@@ -25,9 +25,9 @@
       <nav id="nav" class="navbar__list">
         <button id="cerrar" class="cerrar__menu"><i class="bi bi-x-lg"></i></button>
         <ul class="menu__list">
-          <li><a href="#">SOBRE MÍ</a></li>
-          <li><a href="#">LENGUAJES</a></li>
-          <li><a href="#">PROYECTOS</a></li>
+          <li><a href="#sobre_mi">SOBRE MÍ</a></li>
+          <li><a href="#tecnologias">TECNOLOGÍAS</a></li>
+          <li><a href="#portafolio">PROYECTOS</a></li>
           <li><a id="contacto__border" href="#">CONTACTO</a></li>
         </ul>
       </nav>
@@ -52,51 +52,94 @@
   </main>
   <!-- SOBRE MÍ -->
   <section class="about__container">
-    <h3>---SOBRE MÍ---</h3>
+    <h3 id="sobre_mi">---SOBRE MÍ---</h3>
     <img class="about__img" src="./Imagenes/cv-color.jpg" alt="perfil">
-    <p>Desde muy chico que me llevo bien con las resolución de problemas y las computadoras
-      Soy una persona muy investigativa y con vocación de servicio. Vengo estudiando y poniendo en práctica diferentes
+    <p>Desde muy chico tengo relación con las computadoras
+      Soy una persona investigativa y con vocación de servicio. Vengo estudiando y poniendo en práctica diferentes
       lenguajes del frontend, con diseños responsive y buenas prácticas.
     </p>
+  </section>
+
+
+  <!-- Tecnologias -->
+  <div class="tecnologias__container">
+    <h3 id="tecnologias">--TECNOLOGÍAS--</h3>
+    <div class="tecnologias__content">
+      <div><img src="./Imagenes/html-icon.png" alt=""></div>
+      <div><img src="./Imagenes/css-icon.png" alt=""></div>
+      <div><img src="./Imagenes/js-icon.png" alt=""></div>
+      <div><img src="./Imagenes/github-icon.png" alt=""></div>
+    </div>
+  </div>
+
+  <!-- HOBBIES  -->
+  <section class="hobbies__container">
+    <h3>--HOBBIES--</h3>
+    <div class="hobbies__content">
+      <div class="hobbie__card"><img src="" alt="">
+        <p>Music</p>
+      </div>
+      <div class="hobbie__card"><img src="" alt="">
+        <p>Mountain</p>
+      </div>
+      <div class="hobbie__card"><img src="" alt="">
+        <p>Games</p>
+      </div>
+      <div class="hobbie__card"><img src="" alt="">
+        <p>Sports</p>
+      </div>
+    </div>
   </section>
 
   <!-- Portafolio -->
   <section class="cards__portfolio">
     <div>
-      <h3>PROYECTOS</h3>
+      <h3 id="portafolio">--PROYECTOS--</h3>
     </div>
     <div class="cards__container">
       <div class="cards">
-        <img src="./Imagenes/html-icon.png" alt="">
+        <img src="./Imagenes/bonsai-kokedamas.png" alt="">
         <div class="cards__text">
-          <h4>Bonsai & Kokedama's Love</h4>
+          <h3>Bonsai & Kokedama's Love</h3>
           <p>Sitio estatico de tienda virtual de plantas</p>
-          <a href=""><img src="" alt=""></a>
-          <p>HTML CSS3 BOOTSTRAP</p>
+          <div class="cards__icons">
+            <a href="https://github.com/matiasbiasioli/Bonsai-Kokedama-s-Love"><i class="bi bi-github"></i></a>
+            <a href="https://bonsai-kokedama-s-love.vercel.app/"><i class="bi bi-box-arrow-up-right"></i></a>
+          </div>
+          <p>HTML CSS3 BOOTSTRAP SASS</p>
         </div>
       </div>
       <div class="cards">
-        <img src="./Imagenes/html-icon.png" alt="">
+        <img src="./Imagenes/asiatic-food.jpg" alt="">
         <div class="cards__text">
-          <h4>Eco-Barrier</h4>
+          <h3>Eco-Barrier</h3>
           <p>Sitio estatico para empresa</p>
-          <a href=""><img src="" alt=""></a>
+          <div class="cards__icons">
+            <a href="https://github.com/matiasbiasioli/Eco-barrier"><i class="bi bi-github"></i></a>
+            <a href="https://eco-barrier.vercel.app/"><i class="bi bi-box-arrow-up-right"></i></a>
+          </div>
           <p>HTML CSS3 BOOTSTRAP</p>
         </div>
       </div>
       <div class="cards">
-        <img src="./Imagenes/html-icon.png" alt="">
+        <img src="./Imagenes/asiatic-food.jpg" alt="">
         <div class="cards__text">
-          <h4>Asiatic Food</h4>
+          <h3>Asiatic Food</h3>
           <p>Sitio para restaurant de comidas con carrito de compras</p>
-          <a href=""><img src="" alt=""></a>
+          <div class="cards__icons">
+            <a href="https://github.com/matiasbiasioli/ProyectoFinal---Biasioli"><i class="bi bi-github"></i></a>
+            <a href="https://asiatic-food.vercel.app/"><i class="bi bi-box-arrow-up-right"></i></a>
+          </div>
           <p>HTML CSS3 JAVASCRIPT BOOTSTRAP</p>
         </div>
       </div>
     </div>
-
   </section>
 
+  <!-- FOOTER -->
+  <div class="footer__container">
+    <p>Created by muzo</p>
+  </div>
 
   <!-- SCRIPT DE TYPED JS -->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>

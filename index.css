@@ -5,8 +5,10 @@
 }
 :root {
     --color-fondo: #181a1a;
+    --color-fondo2: #1d293a;
     --color-tipografia: #00cf5d;
     --color-tipografia2: #fff;
+    
 }
 body {
     background-color: var(--color-fondo);
@@ -30,7 +32,7 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    bottom: 0;
+    
     padding: 1rem;
     visibility: hidden;  
 }
@@ -113,7 +115,7 @@ body {
     width: 20%;
     height: 20%;
     margin-top: 1rem;
-    border-radius: 10px;
+    border-radius: 50%;
     filter: grayscale(100%);
 }
 .about__container img:hover {
@@ -121,7 +123,48 @@ body {
     transform: scale(1.1);
     transition: all .7s;
 }
-/* CARDS PROYECTOS */
+/* TECNOLOGIAS */
+.tecnologias__container h3 {
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+}
+.tecnologias__content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+.tecnologias__content img {
+    width: 4rem;
+}
+
+/* HOBBIES */
+.hobbies__container {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hobbies__container h3 {
+    color: white;
+    text-align: center;
+}
+.hobbies__content {
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+.hobbie__card {
+    background-color: var(--color-fondo2);
+    width: 80%;
+    text-align: center;
+}
+.hobbie__card p {
+    color: white;
+    font-size: 1.5rem;
+    
+}
+/* PORTAFOLIO */
 .cards__portfolio {
     display: flex;
     flex-direction: column;
@@ -130,14 +173,17 @@ body {
     margin-top: 4rem;
     color: white;
 }
+.cards__container {
+    width: 80vw;
+}
 .cards {
-    background-color: #1d293a;
+    background-color: var(--color-fondo2);
     margin-top: 1rem;
-    padding: 2rem;
     border-radius: 5px;
 }
 .cards img {
     filter: grayscale(100%);
+    width: 100%;
 }
 .cards img:hover {
     filter: grayscale(0%);
@@ -148,7 +194,26 @@ body {
     flex-direction: column;
     align-items: flex-start;
     padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: .5rem;
 }
+
+.cards__icons {
+    display: flex;
+}
+.cards__icons a {
+    font-size: 1.5rem;
+    padding: 1rem 1rem 1rem 0;
+    color: white;
+}
+/* FOOTER */
+.footer__container {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+}
+
+
 /* VISTA DESKTOP<<<<<<<<<<<<<<< */
 @media (min-width: 880px) {
     body {

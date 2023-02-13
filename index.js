@@ -11,7 +11,7 @@ cerrar.addEventListener("click", () => {
 
 //TYPED
 let typed = new Typed('.typed', {
-    strings: ['Desarrollo Web', 'Diseño Responsivo', 'Animaciones'],
+    strings: ['Web Developer', 'Responsive Design', 'Javascript'],
     typeSpeed: 75,
     backSpeed: 75,
     loop: true,
