@@ -126,7 +126,6 @@ body {
     text-align: center;
     margin-top: 4rem;
 }
-
 .about__container p {
     margin-top: 1rem;
 }
@@ -151,6 +150,7 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
 .tecnologias__container h3 {
     color: white;
     text-align: center;
@@ -323,19 +323,44 @@ body {
         font-size: 41px;
         color: var(--color-tipografia);
     }
-
+    /* SOBRE MI SECCION */
+    .about__container {
+        color: white;
+        text-align: center;
+        margin-top: 4rem;
+    }
+    .about__container h3 {
+        font-size: 26px;
+    }
+    .about__container p {
+        margin-top: 1rem;
+    }
+    .about__container img {
+        width: 15%;
+        margin-top: 1.5rem;
+        filter: grayscale(100%);
+        clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    }
+    .about__container img:hover {
+        filter: grayscale(0%);
+        transform: scale(1.1);
+        transition: all .7s;
+    }
     /* HOBBIES */
     .hobbies__container {
         margin-top: 1.5rem;
     }
+
     .hobbies__container h3 {
         color: white;
         text-align: center;
     }
+
     .hobbies__content {
         width: 80%;
         display: flex;
     }
+
     .hobbie__card {
         margin-top: 1rem;
         margin-left: 1rem;
@@ -345,6 +370,7 @@ body {
         padding: 4rem;
         width: 40%;
     }
+
     .hobbie__card p {
         color: white;
         font-size: 1.5rem;
@@ -371,20 +397,23 @@ body {
     /* PORTAFOLIO */
     .cards__portfolio {
         display: flex;
-        flex-direction:column; 
+        flex-direction: column;
         align-items: center;
         text-align: center;
         margin-top: 4rem;
         color: white;
     }
+
     .cards__container {
         width: 30vw;
     }
+
     .cards {
         background-color: var(--color-fondo2);
         margin-top: 3rem;
         border-radius: 5px;
     }
+
     .cards img {
         width: 100%;
     }
@@ -392,6 +421,7 @@ body {
     .cards img:hover {
         transition: all .3s;
     }
+
     .cards__text {
         display: flex;
         flex-direction: column;
@@ -400,12 +430,15 @@ body {
         padding-bottom: 1rem;
         margin-left: .5rem;
     }
+
     .cards__text p {
         text-align: left;
     }
+
     .cards__icons {
         display: flex;
     }
+
     .cards__icons a {
         font-size: 1.5rem;
         padding: 1rem 1rem 1rem 0;
