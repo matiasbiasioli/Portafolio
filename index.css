@@ -73,6 +73,7 @@ body {
 /* MAIN CONTENT */
 .main__container {
     text-align: center;
+    margin-top: 3rem;
 }
 
 .main__text p {
@@ -92,7 +93,7 @@ body {
 
 .typed {
     color: white;
-    font-size: 30px;
+    font-size: 18px;
 }
 
 .main__button__container {
@@ -126,8 +127,12 @@ body {
     text-align: center;
     margin-top: 4rem;
 }
+.about__container h3 {
+    font-size: 20px;
+}
 .about__container p {
-    margin-top: 1rem;
+    margin: 1rem;
+    
 }
 
 .about__container img {
@@ -145,123 +150,111 @@ body {
 }
 
 /* TECNOLOGIAS */
-.tecnologias__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .tecnologias__container h3 {
+    font-size: 20px;
     color: white;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
 .tecnologias__content {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
     margin-top: 1rem;
-    width: 50%;
+    gap: .5rem;
 }
 
 .tecnologias__content img {
-    padding: .4rem;
+    
     width: 4rem;
-
 }
 
 /* HOBBIES */
-.hobbies__container {
-    margin-top: 1.5rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
 
 .hobbies__container h3 {
+    font-size: 20px;
     color: white;
     text-align: center;
+    margin-top: 4rem;
 }
 
 .hobbies__content {
-    justify-content: space-between;
-    margin-top: 1.5rem;
-    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem auto;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
-
 .hobbie__card {
-    margin-top: 1rem;
-    text-align: center;
-    background-color: var(--color-fondo2);
-    padding: 6rem;
-
-}
-
-.hobbie__card p {
-    color: white;
-    font-size: 1.5rem;
-
-}
-
-/* PORTAFOLIO */
-.cards__portfolio {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    margin-top: 4rem;
+    width: 40vw;
+    background-color: #1d293a;
+    padding: 4rem;
+}
+.hobbie__card img {
+    background-color: #00cf5d;
+    width: 2rem;
+}
+.hobbie__card p {
     color: white;
+    font-size: 1.5rem;
 }
 
+/* PORTAFOLIO */
+.cards__portfolio h3 {
+    text-align: center;
+    color: white;
+    margin-top: 4rem;
+}
 .cards__container {
-    width: 70vw;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 2rem auto;
+    flex-wrap: wrap;
 }
-
 .cards {
     background-color: var(--color-fondo2);
-    margin-top: 3rem;
+    margin-top: 2rem;
     border-radius: 5px;
+    width: 80vw;    
 }
 
 .cards img {
     width: 100%;
 }
-
-.cards img:hover {
-
-    transition: all .3s;
-}
-
 .cards__text {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    color: white;
     margin-left: .5rem;
-
+    padding: 1rem 0;
 }
-
-.cards__text p {
+.cards__text h3 {
     text-align: left;
+    font-size: 22px;
+    
 }
-
-.cards__icons {
-    display: flex;
+.cards__text p {
+   text-align: left;
+   font-size: 14px;
 }
-
 .cards__icons a {
     font-size: 1.5rem;
-    padding: 1rem 1rem 1rem 0;
+    padding: .2rem;
     color: white;
 }
 
 /* FOOTER */
 .footer__container {
+    background-color: var(--color-fondo2);
     text-align: center;
     color: white;
-    font-size: 3rem;
+    font-size: 2rem;
+    height: 30vh;
+    margin: 2rem auto 0 auto;
 }
 
 
@@ -347,35 +340,13 @@ body {
         transition: all .7s;
     }
     /* HOBBIES */
-    .hobbies__container {
-        margin-top: 1.5rem;
-    }
-
-    .hobbies__container h3 {
-        color: white;
-        text-align: center;
-    }
-
-    .hobbies__content {
-        width: 80%;
-        display: flex;
-    }
-
     .hobbie__card {
-        margin-top: 1rem;
-        margin-left: 1rem;
-        text-align: center;
-        flex-wrap: wrap;
-        background-color: var(--color-fondo2);
-        padding: 4rem;
-        width: 40%;
+        width: 20vw; 
     }
-
-    .hobbie__card p {
-        color: white;
-        font-size: 1.5rem;
+    .hobbie__card img {
+        background-color: #00cf5d;
+        width: 2rem;
     }
-
     /* TECNOLOGIAS */
     .tecnologias__container h3 {
         color: white;
@@ -391,57 +362,12 @@ body {
     }
 
     .tecnologias__content img {
-        width: 8rem;
+        width: 6rem;
     }
 
     /* PORTAFOLIO */
-    .cards__portfolio {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin-top: 4rem;
-        color: white;
-    }
-
-    .cards__container {
-        width: 30vw;
-    }
-
-    .cards {
-        background-color: var(--color-fondo2);
-        margin-top: 3rem;
-        border-radius: 5px;
-    }
-
-    .cards img {
-        width: 100%;
-    }
-
-    .cards img:hover {
-        transition: all .3s;
-    }
-
-    .cards__text {
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        margin-left: .5rem;
-    }
-
-    .cards__text p {
-        text-align: left;
-    }
-
-    .cards__icons {
-        display: flex;
-    }
-
-    .cards__icons a {
-        font-size: 1.5rem;
-        padding: 1rem 1rem 1rem 0;
-        color: white;
+    
+    .footer__container {
+        
     }
 }
