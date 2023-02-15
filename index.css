@@ -196,7 +196,6 @@ body {
     padding: 4rem;
 }
 .hobbie__card img {
-    background-color: #00cf5d;
     width: 2rem;
 }
 .hobbie__card p {
@@ -219,9 +218,8 @@ body {
 }
 .cards {
     background-color: var(--color-fondo2);
-    margin-top: 2rem;
     border-radius: 5px;
-    width: 80vw;    
+    width: 80vw;  
 }
 
 .cards img {
@@ -229,13 +227,12 @@ body {
 }
 .cards__text {
     color: white;
-    margin-left: .5rem;
-    padding: 1rem 0;
+    padding: 1rem;
+    line-height: 1.5;
 }
 .cards__text h3 {
     text-align: left;
     font-size: 22px;
-    
 }
 .cards__text p {
    text-align: left;
@@ -253,7 +250,7 @@ body {
     text-align: center;
     color: white;
     font-size: 2rem;
-    height: 30vh;
+    height: 150px;
     margin: 2rem auto 0 auto;
 }
 
