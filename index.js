@@ -17,3 +17,29 @@ let typed = new Typed('.typed', {
     loop: true,
     loopCount: false
 }) 
+
+// CODIGO SCROLL REVEAL 
+
+window.sr = ScrollReveal();
+
+sr.reveal('.about__container' , {
+    duration: 4000,
+}) 
+sr.reveal('.tecnologias__content' , {
+    duration: 3000,
+    origin: 'left',
+    distance: '400px',
+})
+sr.reveal('.hobbies__content' , {
+    duration: 3000,
+    origin: 'right',
+    distance: '400px'
+})
+sr.reveal('.card' , {
+    duration: 2000,
+    rotate: {
+        x: 0,
+        y: 120,
+        z: 0
+    }
+})
