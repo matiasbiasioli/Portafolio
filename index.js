@@ -30,13 +30,14 @@ sr.reveal('.tecnologias__content' , {
     duration: 3000,
     origin: 'left',
     distance: '400px',
-    reset: true
+    reset: true,
 })
 sr.reveal('.hobbies__content' , {
     duration: 3000,
     origin: 'right',
     distance: '400px',
-    reset: true
+    reset: true,
+    mobile: false
 })
 sr.reveal('.card' , {
     duration: 2000,
@@ -45,5 +46,5 @@ sr.reveal('.card' , {
         x: 0,
         y: 120,
         z: 0
-    }
+    },
 })
