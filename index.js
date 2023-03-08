@@ -32,12 +32,9 @@ sr.reveal('.tecnologias__content' , {
     distance: '400px',
     reset: true,
 })
-sr.reveal('.hobbies__content' , {
-    duration: 3000,
-    origin: 'right',
-    distance: '400px',
-    reset: true,
-    mobile: false
+sr.reveal('.hobbie__card' , {
+    duration: 2000,
+    reset: true
 })
 sr.reveal('.card' , {
     duration: 2000,
