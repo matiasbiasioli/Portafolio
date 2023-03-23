@@ -9,6 +9,8 @@
     --color-fondo2: #1d293a;
     --color-tipografia: #00cf5d;
     --color-tipografia2: #fff;
+    font-family: 'Montserrat', sans-serif;
+    @import url: ('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
 
 }
 
@@ -53,6 +55,9 @@ body {
 .navbar__list a {
     color: var(--color-tipografia2);
 }
+.navbar__list a:hover {
+    color: var(--color-tipografia)
+}
 
 .menu__list {
     list-style: none;
@@ -62,6 +67,7 @@ body {
     gap: 1rem;
 }
 
+
 .abrir__menu,
 .cerrar__menu {
     font-size: 1.5rem;
@@ -69,7 +75,6 @@ body {
     border: 0;
     border-radius: 4px;
     background-color: var(--color-tipografia);
-
 }
 
 .cerrar__menu {
@@ -139,7 +144,8 @@ body {
 }
 
 .about__container p {
-    margin: 1rem;
+    margin: 1rem auto;
+    width: 80vw;
 
 }
 
@@ -147,12 +153,11 @@ body {
     width: 20%;
     height: 20%;
     margin-top: 1rem;
-    filter: grayscale(100%);
-    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    /* filter: grayscale(100%); */
 }
 
 .about__container img:hover {
-    filter: grayscale(0%);
+    /* filter: grayscale(0%); */
     transform: scale(1.1);
     transition: all .7s;
 }
@@ -335,8 +340,8 @@ body {
         flex-direction: row;
         gap: 1rem;
     }
-
     #contacto__border {
+        color: white;
         border: 2px solid var(--color-tipografia);
         border-radius: 4px;
         padding: 5px 15px;
@@ -397,12 +402,12 @@ body {
     .about__container img {
         width: 15%;
         margin-top: 1.5rem;
-        filter: grayscale(100%);
-        clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+        /* filter: grayscale(100%);
+        clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%); */
     }
 
     .about__container img:hover {
-        filter: grayscale(0%);
+        /* filter: grayscale(0%); */
         transform: scale(1.1);
         transition: all .7s;
     }
