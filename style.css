@@ -40,6 +40,7 @@ body {
     position: absolute;
     top: 0;
     right: 0;
+    bottom: 0;
     padding: 1rem;
     visibility: hidden;
 }
@@ -150,8 +151,8 @@ body {
 }
 
 .about__container img {
-    width: 20%;
-    height: 20%;
+    width: 30vw;
+    
     margin-top: 1rem;
     /* filter: grayscale(100%); */
 }
@@ -491,6 +492,6 @@ body {
 
     .footer__container a {
         color: white;
-        font-size: 22px;
+        font-size: 34px;
     }
 }
