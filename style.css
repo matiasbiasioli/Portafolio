@@ -386,7 +386,7 @@ body {
   .about__container {
     color: white;
     text-align: center;
-    margin-top: 4rem;
+    margin-top: 6rem;
   }
 
   .about__container h3 {
@@ -396,7 +396,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 4rem 15rem 4rem 15rem;
+    margin: 2rem 15rem 2rem 15rem;
     
   }
 
