@@ -26,6 +26,9 @@ sr.reveal('.about__container' , {
     duration: 4000,
     reset: true
 }) 
+sr.reveal('.cards__container' , {
+    duration: 4000,
+})
 sr.reveal('.tech_1' , {
     duration: 2000,
     origin: 'left',
@@ -43,7 +46,4 @@ sr.reveal('.tech_3' , {
     origin: 'left',
     distance: '500px',
     
-})
-sr.reveal('.card' , {
-    duration: 4000,
 })
