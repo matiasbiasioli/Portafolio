@@ -428,22 +428,31 @@ body {
   }
 
   /* TECNOLOGIAS */
+  .tecnologias__container {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
   .tecnologias__container h3 {
+    justify-content: center;
     color: white;
     text-align: center;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     font-size: 26px;
+    
   }
 
   .tecnologias__content {
-    display: flex;
+    flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 2rem;
+    margin: auto;
+    margin-bottom: 2rem;
   }
 
   .tecnologias__content img {
-    width: 6rem;
+    width: 7rem;
   }
 
   /* PORTAFOLIO */
