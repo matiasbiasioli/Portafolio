@@ -499,24 +499,29 @@ body {
     line-height: 1.8;
     padding-right: 0.3rem;
   }
-  .cards__wp__container {
-    display: flex;
-    width: 100%;
-    margin: auto;
-  }
   /* WORDPRESS PORTAFOLIO */
-  .wordpress__card {
-    max-width: 200px;
+  .wp_cards_container h3 {
+    font-size: 26px;
+    color: white;
+    text-align: center;
+  }
+  .wp_card_content {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+  }
+  .wp_card {
     margin-top: 60px;
   }
-  .wordpress__card img {
-    width: 200px;
+  .wp_card img {
+    width: 400px;
+    height: 250px;
     border-radius: 20px;
     
   }
-  .wordpress__card:hover {
+  .wp_card:hover {
     transform: translateY(-100px);
-    transition: all 1s;
+    transition: all 2s;
   }
 
   /* FOOTER */
