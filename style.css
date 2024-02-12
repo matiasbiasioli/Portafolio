@@ -135,7 +135,7 @@ body {
 }
 
 /* SOBRE MI SECCION */
-.about__container {
+ .about__container {
   color: white;
   text-align: center;
   margin-top: 4rem;
@@ -154,23 +154,28 @@ body {
   width: 30vw;
 
   margin-top: 1rem;
-  /* filter: grayscale(100%); */
+  /* filter: grayscale(100%);
 }
 
 .about__container img:hover {
   /* filter: grayscale(0%); */
   transform: scale(1.1);
   transition: all 0.7s;
-}
+} */
 
 /* TECNOLOGIAS */
 
 .tecnologias__container h3 {
-  font-size: 20px;
+}
+.tecnologias__container h3 {
+  justify-content: center;
   color: white;
   text-align: center;
-  margin-top: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 20px; 
 }
+
 
 .tecnologias__content {
   display: flex;
@@ -391,39 +396,23 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 10rem 0 20rem;
+    margin: 4rem 15rem 4rem 15rem;
+    
   }
 
-  .about__container p {
-    font-size: 1rem;
-    margin: 7rem 15rem 7rem 0;
+  .about_content p {
+    font-size: 1.2rem;
   }
-
   .about__container img {
     width: 20%;
     /* filter: grayscale(100%);
         clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%); */
   }
-
   .about__container img:hover {
     /* filter: grayscale(0%); */
     transform: scale(1.1);
     transition: all 0.7s;
   }
-
-  /* HOBBIES */
-  /* .hobbies__container h3 {
-    font-size: 26px;
-  }
-
-  .hobbie__card {
-    width: 20vw;
-  }
-
-  .hobbie__card img {
-    width: 2rem;
-  } */
-
   /* TECNOLOGIAS */
   .tecnologias__container {
     margin: auto;
@@ -437,8 +426,7 @@ body {
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 2rem;
-    font-size: 26px;
-    
+    font-size: 26px; 
   }
 
   .tecnologias__content {
