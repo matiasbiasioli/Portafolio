@@ -184,40 +184,6 @@ body {
   width: 4rem;
 }
 
-/* HOBBIES */
-.hobbies__container h3 {
-  font-size: 20px;
-  color: white;
-  text-align: center;
-  margin-top: 4rem;
-}
-
-.hobbies__content {
-  display: flex;
-  justify-content: center;
-  margin: 1.5rem auto;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.hobbie__card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 40vw;
-  background-color: #1d293a;
-  padding: 4rem;
-}
-
-.hobbie__card img {
-  width: 2rem;
-}
-
-.hobbie__card p {
-  color: white;
-  font-size: 1.5rem;
-}
-
 /* PORTAFOLIO */
 .portafolio__container h3 {
   text-align: center;
@@ -261,8 +227,33 @@ body {
   font-size: 24px;
   padding-right: 0.3rem;
 }
-.wordpress__card img {
-  height: 400px;
+/* Wordpress mobile */
+.wp_cards_container h3 {
+  font-size: 26px;
+  color: white;
+  text-align: center;
+}
+.wp_card_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+  
+}
+.wp_card {
+  margin: 1rem;
+  
+}
+.wp_card img {
+  width: 400px;
+  height: 250px;
+  border-radius: 20px;
+  
+}
+.wp_card:hover {
+  transform: translateY(-30px);
+  transition: all 2s;
 }
 
 /* FOOTER */
@@ -507,6 +498,7 @@ body {
   }
   .wp_card_content {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     margin-top: 1rem;
     
