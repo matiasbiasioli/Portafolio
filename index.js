@@ -30,21 +30,20 @@ sr.reveal('.tech_1' , {
     duration: 2000,
     origin: 'left',
     distance: '500px',
-    reset: true,
+    
 })
 sr.reveal('.tech_2' , {
     duration: 4000,
     origin: 'left',
     distance: '500px',
-    reset: true,
+    
 })
 sr.reveal('.tech_3' , {
     duration: 5000,
     origin: 'left',
     distance: '500px',
-    reset: true,
+    
 })
 sr.reveal('.card' , {
     duration: 4000,
-    reset: true,
 })
