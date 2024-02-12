@@ -26,22 +26,25 @@ sr.reveal('.about__container' , {
     duration: 4000,
     reset: true
 }) 
-sr.reveal('.tecnologias__content' , {
-    duration: 3000,
+sr.reveal('.tech_1' , {
+    duration: 2000,
     origin: 'left',
-    distance: '400px',
+    distance: '500px',
     reset: true,
 })
-sr.reveal('.hobbie__card' , {
-    duration: 2000,
-    reset: true
+sr.reveal('.tech_2' , {
+    duration: 4000,
+    origin: 'left',
+    distance: '500px',
+    reset: true,
+})
+sr.reveal('.tech_3' , {
+    duration: 5000,
+    origin: 'left',
+    distance: '500px',
+    reset: true,
 })
 sr.reveal('.card' , {
-    duration: 2000,
+    duration: 4000,
     reset: true,
-    rotate: {
-        x: 0,
-        y: 120,
-        z: 0
-    },
 })
