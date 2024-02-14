@@ -237,6 +237,7 @@ body {
   font-size: 26px;
   color: white;
   text-align: center;
+  margin-top: 2rem;
 }
 .wp_card_content {
   display: flex;
@@ -251,8 +252,8 @@ body {
   
 }
 .wp_card img {
-  width: 400px;
-  height: 250px;
+  width: 80vw;
+  height: 200px;
   border-radius: 20px;
   
 }
