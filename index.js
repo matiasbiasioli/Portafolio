@@ -3,16 +3,16 @@ const abrir = document.querySelector("#abrir");
 const cerrar = document.querySelector("#cerrar");
 
 abrir.addEventListener("click", () => {
-    nav.style.overflowX = 'hidden';
-    nav.style.transition = 'ease .5s all';
-    nav.style.transform = 'translateX(-5px)'
+    // nav.style.transition = 'ease .5s all';
+    // nav.style.transform = 'translateX(-5px)'
     nav.style.visibility = 'visible';
+    nav.style.transition = 'visibility ease-in .1s'
     
 })
 cerrar.addEventListener("click", () => {
-    nav.style.overflowX = 'hidden';
-    nav.style.transform = 'translateX(150px)'
-    nav.style.transition = 'ease .5s all';
+    // nav.style.transform = 'translateX(150px)'
+    // nav.style.transition = 'ease .5s all';
+    nav.style.transition = 'visibility ease-out .1s'
     nav.style.visibility = 'hidden';
 
 })
