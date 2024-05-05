@@ -3,10 +3,18 @@ const abrir = document.querySelector("#abrir");
 const cerrar = document.querySelector("#cerrar");
 
 abrir.addEventListener("click", () => {
-    nav.classList.add("visible");
+    nav.style.overflowX = 'hidden';
+    nav.style.transition = 'ease .5s all';
+    nav.style.transform = 'translateX(-5px)'
+    nav.style.visibility = 'visible';
+    
 })
 cerrar.addEventListener("click", () => {
-    nav.classList.remove("visible")
+    nav.style.overflowX = 'hidden';
+    nav.style.transform = 'translateX(150px)'
+    nav.style.transition = 'ease .5s all';
+    nav.style.visibility = 'hidden';
+
 })
 
 //TYPED CODE

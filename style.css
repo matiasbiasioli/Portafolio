@@ -29,6 +29,7 @@ body {
     justify-content: space-between;
     padding: 1rem;
     margin: 1rem 1rem 0 1rem;
+
   }
   
   .header__container a {
@@ -38,6 +39,7 @@ body {
   .navbar__list {
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
     align-items: end;
     gap: 1rem;
     background-color: var(--color-fondo);
@@ -46,12 +48,8 @@ body {
     right: 0;
     bottom: 0;
     padding: 2rem;
+    transform: translateX(150px);
     visibility: hidden;
-  }
-  
-  .visible {
-    transition: all 4s ease;
-    visibility: visible;
   }
   
   .navbar__list a {
