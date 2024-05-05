@@ -9,7 +9,7 @@ cerrar.addEventListener("click", () => {
     nav.classList.remove("visible")
 })
 
-//TYPED
+//TYPED CODE
 let typed = new Typed('.typed', {
     strings: ['Web Developer', 'Responsive Design', 'Javascript'],
     typeSpeed: 75,
@@ -19,7 +19,6 @@ let typed = new Typed('.typed', {
 }) 
 
 // CODIGO SCROLL REVEAL 
-
 window.sr = ScrollReveal();
 
 sr.reveal('.about__container' , {
