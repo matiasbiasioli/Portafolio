@@ -19,7 +19,7 @@ cerrar.addEventListener("click", () => {
 
 //TYPED CODE
 let typed = new Typed('.typed', {
-    strings: ['Web Developer', 'Responsive Design', 'Javascript'],
+    strings: ['Web Developer', 'Responsive Design', 'Javascript', 'React js'],
     typeSpeed: 75,
     backSpeed: 75,
     loop: true,
@@ -38,19 +38,12 @@ sr.reveal('.cards__container' , {
 })
 sr.reveal('.tech_1' , {
     duration: 2000,
-    origin: 'left',
-    distance: '500px',
     
 })
 sr.reveal('.tech_2' , {
     duration: 4000,
-    origin: 'left',
-    distance: '500px',
     
 })
 sr.reveal('.tech_3' , {
-    duration: 5000,
-    origin: 'left',
-    distance: '500px',
-    
+    duration: 5000,    
 })
