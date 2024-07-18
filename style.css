@@ -488,6 +488,7 @@ body {
   .wp_card_content {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 1rem;
     
