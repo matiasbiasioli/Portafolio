@@ -435,7 +435,7 @@ body {
   }
 
   .tecnologias__content img {
-    width: 7rem;
+    width: 6rem;
   }
   /* PORTAFOLIO */
   .portafolio__container h3 {
@@ -451,7 +451,7 @@ body {
   }
 
   .card {
-    width: 28vw;
+    width: 25vw;
     overflow: hidden;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
