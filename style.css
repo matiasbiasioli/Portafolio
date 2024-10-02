@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth; 
+  
 }
 
 :root {
@@ -10,7 +11,7 @@
   --color-fondo2: #1d293a;
   --color-tipografia: #00cf5d;
   --color-tipografia2: #fff;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", Georgia, 'Times New Roman', Times, serif;
   @import url:
     (
       "https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap"
