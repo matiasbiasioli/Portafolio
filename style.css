@@ -253,7 +253,8 @@ body {
   .wp_card img {
     width: 80vw;
     height: 200px;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
   .wp_card:hover {
     transform: translateY(-30px);
@@ -501,7 +502,8 @@ body {
   .wp_card img {
     width: 400px;
     height: 250px;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
   .wp_card:hover {
     transform: translateY(-2px);
