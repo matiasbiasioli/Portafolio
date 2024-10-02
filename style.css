@@ -2,8 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth; 
-  
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -11,11 +10,7 @@
   --color-fondo2: #1d293a;
   --color-tipografia: #00cf5d;
   --color-tipografia2: #fff;
-  font-family: "Poppins", Georgia, 'Times New Roman', Times, serif;
-  @import url:
-    (
-      "https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap"
-    );
+  font-family: "poppins", sans-serif;
 }
 
 body {
@@ -440,7 +435,7 @@ body {
   .tecnologias__content img {
     width: 6rem;
   }
-  
+
   /* PORTAFOLIO */
   .portafolio__container h3 {
     font-size: 26px;
@@ -461,9 +456,8 @@ body {
     border-top-left-radius: 20px;
   }
   .card img {
-  
   }
-  
+
   .card__text {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
