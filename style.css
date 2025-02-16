@@ -194,13 +194,13 @@ body {
   }
 
   /* PORTAFOLIO */
-  .portafolio__container h3 {
+  .portfolio-title {
     text-align: center;
     color: white;
     font-size: 20px;
   }
 
-  .cards__container {
+  .portfolio-container {
     display: grid;
     justify-content: center;
   }
@@ -214,56 +214,30 @@ body {
     width: 100%;
   }
 
-  .card__text {
-    color: white;
+  .card-content {
+    border-radius: 15px;
     background-color: var(--color-fondo2);
     padding: 1rem;
     text-align: left;
   }
 
-  .card__text h3 {
+  .card-content h3 {
+    color: white;
     text-align: left;
     line-height: 1.2;
     font-size: 28px;
   }
 
-  .card__text p {
+  .card-content p {
+    color: white;
     margin-bottom: 0.5rem;
   }
 
-  .card__text a {
+  .card-content a {
     color: white;
     font-size: 24px;
     padding-right: 0.3rem;
   }
-  /* Wordpress mobile */
-  .wp_cards_container h3 {
-    font-size: 26px;
-    color: white;
-    text-align: center;
-    margin-top: 2rem;
-  }
-  .wp_card_content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 1rem;
-  }
-  .wp_card {
-    margin: 1rem;
-  }
-  .wp_card img {
-    width: 80vw;
-    height: 200px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-  }
-  .wp_card:hover {
-    transform: translateY(-30px);
-    transition: all 2s;
-  }
-
   /* FOOTER */
   .footer__container {
     display: grid;
