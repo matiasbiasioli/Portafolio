@@ -4,7 +4,6 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
 :root {
   --color-fondo: #181a1a;
   --color-fondo2: #1d293a;
@@ -12,7 +11,6 @@
   --color-tipografia2: #fff;
   font-family: "poppins", sans-serif;
 }
-
 body {
   background-color: var(--color-fondo);
   overflow-x: hidden;
@@ -44,10 +42,9 @@ body {
     right: 0;
     bottom: 0;
     padding: 2rem;
-    /* transform: translateX(150px); */
     visibility: hidden;
+    /* transform: translateX(100%); */
   }
-
   .navbar__list a {
     color: var(--color-tipografia2);
   }
@@ -165,24 +162,34 @@ body {
   }
 
   /* TECNOLOGIAS */
-  .tecnologias__container h3 {
+  .tech-container h3 {
     justify-content: center;
     color: white;
     text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-top: 3rem;
     font-size: 20px;
   }
-
-  .tecnologias__content {
-    display: flex;
-    flex-wrap: wrap;
+  .tech-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
     justify-content: center;
-    margin-top: 1rem;
-    gap: 0.5rem;
+    margin-top: 20px;
+    padding: 30px;
   }
-
-  .tecnologias__content img {
+  .tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .tech-item p {
+    color: white;
+  }
+  .tech-content img {
     width: 4rem;
   }
 
@@ -409,14 +416,8 @@ body {
     transform: scale(1.1);
     transition: all 0.7s;
   }
-  /* TECNOLOGIAS */
-  .tecnologias__container {
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .tecnologias__container h3 {
+  /* TECNOLOGIES */
+  .tech-container h3 {
     justify-content: center;
     color: white;
     text-align: center;
@@ -424,87 +425,109 @@ body {
     margin-bottom: 2rem;
     font-size: 26px;
   }
-
-  .tecnologias__content {
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    margin-bottom: 2rem;
-  }
-
-  .tecnologias__content img {
-    width: 6rem;
-  }
-
-  /* PORTAFOLIO */
-  .portafolio__container h3 {
-    font-size: 26px;
-  }
-
-  .cards__container {
+  .tech-content {
+    width: 80vw;
     display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 60px;
     justify-content: center;
-    grid-template-columns: repeat(3, 1fr);
-    margin: 0 10rem 0 10rem;
-    gap: 1;
+    margin: auto;
+    margin-top: 20px;
+    padding: 30px;
   }
-
-  .card {
-    width: 25vw;
-    overflow: hidden;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-  }
-  .card img {
-  }
-
-  .card__text {
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-  }
-
-  .card__text h3 {
-    text-align: left;
-    line-height: 1.2;
-    font-size: 28px;
-  }
-
-  .card__text a {
-    color: white;
-    font-size: 24px;
-    line-height: 1.8;
-    padding-right: 0.3rem;
-  }
-  .card__text a:hover {
-    color: #00cf5d;
-  }
-  /* WORDPRESS PORTAFOLIO */
-  .wp_cards_container h3 {
-    font-size: 26px;
-    color: white;
-    text-align: center;
-  }
-  .wp_card_content {
+  .tech-item {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .tech-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.9);
+  }
+  .tech-item img {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease;
+  }
+  .tech-item img:hover {
+    transform: scale(1.1);
+  }
+  .tech-item p {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+  }
+  /* PORTAFOLIO */
+  .portfolio-title {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+  }
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
-    margin-top: 1rem;
-  }
-  .wp_card {
-    margin: 1rem;
-  }
-  .wp_card img {
-    width: 400px;
-    height: 250px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-  }
-  .wp_card:hover {
-    transform: translateY(-2px);
-    transition: all 0.2s;
+    align-items: center;
+    margin: auto;
+    gap: 2rem;
+    width: 90%;
+    max-width: 1000px;
   }
 
+  /* Estilos de cada card */
+  .card {
+    background: var(--color-fondo2);
+    width: 25vw;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 100%;
+  }
+
+  /* Efecto hover */
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Imagen de la card */
+  .card img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /* Contenido de la card */
+  .card-content {
+    padding: 15px;
+    text-align: start;
+  }
+
+  .card-content h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: var(--color-tipografia2)
+  }
+
+  .card-content p {
+    font-size: 14px;
+    color: var(--color-tipografia2);
+    margin-bottom: 10px;
+  }
+  .card-content a {
+    margin: .5rem;
+    color: var(--color-tipografia2);
+    font-size: 1.6rem;
+  }
+  .card-content a:hover {
+    color: var(--color-tipografia);
+    font-size: 1.5rem;
+  }
   /* FOOTER */
   .footer__container {
     display: grid;
@@ -527,4 +550,20 @@ body {
   .footer__container a:hover {
     color: #00cf5d;
   }
+}
+
+/* Estilos de las etiquetas de tecnología */
+.tech {
+  display: inline-block;
+  background: var(--color-tipografia);
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 5px 3px;
+  transition: background 0.3s ease;
+}
+
+.tech:hover {
+  background: var(--color-fondo);
 }
