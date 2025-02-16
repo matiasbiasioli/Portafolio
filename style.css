@@ -195,6 +195,7 @@ body {
 
   /* PORTAFOLIO */
   .portfolio-title {
+    margin-top: 2rem;
     text-align: center;
     color: white;
     font-size: 20px;
@@ -209,6 +210,7 @@ body {
     border-radius: 15px;
     width: 80vw;
     margin-top: 2rem;
+    background-color: var(--color-fondo2);
   }
 
   .card img {
@@ -216,7 +218,6 @@ body {
   }
 
   .card-content {
-    background-color: var(--color-fondo2);
     padding: 1rem;
     text-align: left;
   }
