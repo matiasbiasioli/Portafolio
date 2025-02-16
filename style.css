@@ -206,6 +206,7 @@ body {
   }
 
   .card {
+    border-radius: 15px;
     width: 80vw;
     margin-top: 2rem;
   }
@@ -215,7 +216,6 @@ body {
   }
 
   .card-content {
-    border-radius: 15px;
     background-color: var(--color-fondo2);
     padding: 1rem;
     text-align: left;
