@@ -27,28 +27,31 @@
 
   <body>
     <!-- HEADER Y NAVEGADOR -->
-    <header>
-      <div class="header__container">
-        <div class="logo">
-          <h1>
-            <a style="color: #fff" href="">MBM</a>
-          </h1>
-        </div>
-        <button id="abrir" class="abrir__menu">
-          <i class="bi bi-list"></i>
-        </button>
-        <nav id="nav" class="navbar__list">
-          <button id="cerrar" class="cerrar__menu">
-            <i class="bi bi-x-lg"></i>
-          </button>
-          <ul class="menu__list">
-            <li><a href="#sobre_mi">Sobre mí</a></li>
-            <li><a href="#tecnologias">Lenguajes</a></li>
-            <li><a href="#portfolio">Portafolio</a></li>
-            <li><a id="contacto__border" href="#contacto">Contacto</a></li>
-          </ul>
-        </nav>
+    <header class="header__container">
+      <div class="logo">
+        <h1>
+          <a href="/">MBM</a>
+        </h1>
       </div>
+
+      <button id="abrir" class="abrir__menu">
+        <i class="bi bi-list"></i>
+      </button>
+      <nav id="nav" class="navbar__list">
+        <button id="cerrar" class="cerrar__menu">
+          <i class="bi bi-x-lg"></i>
+        </button>
+        <ul class="menu__list">
+          <li><a href="#sobre_mi">Sobre mí</a></li>
+          <li><a href="#tecnologias">Lenguajes</a></li>
+          <li><a href="#portfolio">Portafolio</a></li>
+          <li><a id="contacto__border" href="#contacto">Contacto</a></li>
+          <div class="btn-dark-light">
+            <button id="light">☀️</button>
+            <button id="dark">🌙</button>
+          </div>
+        </ul>
+      </nav>
     </header>
     <!-- MAIN -->
     <main class="main__container">
@@ -182,9 +185,10 @@
         </div>
       </div>
     </div>
-
     <!-- Portafolio -->
-    <h3 id="portfolio" class="portfolio-title" style="color: white">PORTAFOLIO</h3>
+    <h3 id="portfolio" class="portfolio-title">
+      PORTAFOLIO
+    </h3>
     <section class="portfolio-container">
       <div class="card">
         <img src="./Imagenes/bonsai.vercel.png" alt="img-sitio-bonsai" />

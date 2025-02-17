@@ -14,8 +14,73 @@
 body {
   background-color: var(--color-fondo);
   overflow-x: hidden;
+  .about_content p {
+    color: white;
+  }
+  .about__container h3 {
+    color: white;
+  }
+  .card-content h3 {
+    color: white;
+  }
+  .card-content p {
+    color: white;
+  }
+  .portfolio-title {
+    color: white;
+  }
+  p {
+    color: var(--color-tipografia)
+  }
+  h2 {
+    color: white
+  }
+  h3 {
+    color: var(--color-tipografia)
+  }
+  a {
+    color: white;
+  }
+  .tech {
+    background-color: var(--color-tipografia);
+  }
+  .tech-item p {
+    color: black;
+  }
 }
-/************ VISTA MOBILE ****************/
+.light-mode {
+  background-color: var(--color-tipografia2);
+  color: black;
+  h1 a {
+    color: black;
+   }
+  .about__container h3 {
+    color: black
+  }
+   .about_content p {
+    color: black;
+   }
+   .tech-container h3 {
+    color: black;
+   }
+   .portfolio-title {
+    color: black;
+   }
+  p {
+    color: var(--color-tipografia);
+  }
+  h2 {
+    color: black;
+  }
+  h3 {
+    color: var(--color-tipografia);
+  }
+ .typed {
+  color: black;
+ }
+ 
+}
+/************ VISTA MOBILE ***************/
 @media (min-width: 320px) {
   /* Header */
   .header__container {
@@ -25,11 +90,9 @@ body {
     padding: 1rem;
     margin: 1rem 1rem 0 1rem;
   }
-
   .header__container a {
     text-decoration: none;
   }
-
   .navbar__list {
     display: flex;
     flex-direction: column;
@@ -44,6 +107,16 @@ body {
     padding: 2rem;
     visibility: hidden;
     /* transform: translateX(100%); */
+  }
+  .btn-dark-light{
+    border: solid 2px white;
+    border-radius: 15px;
+  }
+  .btn-dark-light button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1.5rem;
   }
   .navbar__list a {
     color: var(--color-tipografia2);
@@ -78,31 +151,24 @@ body {
     text-align: center;
     margin-top: 3rem;
   }
-
   .main__text p {
     font-size: 21px;
-    color: var(--color-tipografia);
+    /* color: var(--color-tipografia); */
   }
-
   .main__text h2 {
     font-size: 56px;
-    color: var(--color-tipografia2);
   }
-
   .main__text h3 {
     font-size: 26px;
-    color: var(--color-tipografia);
+    /* color: var(--color-tipografia); */
   }
-
   .typed {
-    color: white;
+    /* color: white; */
     font-size: 18px;
   }
-
   .main__button__container {
     margin-top: 1.5rem;
   }
-
   .main__button1 {
     font-size: 18px;
     color: white;
@@ -134,11 +200,9 @@ body {
 
   /* SOBRE MI SECCION */
   .about__container {
-    color: white;
     text-align: center;
     margin-top: 4rem;
   }
-
   .about__container h3 {
     font-size: 20px;
   }
@@ -192,12 +256,10 @@ body {
   .tech-content img {
     width: 4rem;
   }
-
   /* PORTAFOLIO */
   .portfolio-title {
     margin-top: 2rem;
     text-align: center;
-    color: white;
     font-size: 20px;
   }
 
@@ -205,41 +267,49 @@ body {
     display: grid;
     justify-content: center;
   }
-
   .card {
     border-radius: 15px;
     width: 80vw;
     margin-top: 2rem;
     background-color: var(--color-fondo2);
   }
-
   .card img {
     width: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
   }
-
   .card-content {
     padding: 1rem;
     text-align: left;
   }
-
   .card-content h3 {
-    color: white;
+    /* color: white; */
     text-align: left;
     line-height: 1.2;
     font-size: 28px;
   }
 
   .card-content p {
-    color: white;
+    /* color: white; */
     margin-bottom: 0.5rem;
   }
-
   .card-content a {
-    color: white;
+    /* color: white; */
     font-size: 24px;
     padding-right: 0.3rem;
+  }
+  span {
+    display: inline-block;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px 3px;
+    transition: background 0.3s ease;
+  }
+  
+  span:hover {
+    background: var(--color-fondo);
   }
   /* FOOTER */
   .footer__container {
@@ -268,7 +338,6 @@ body {
     margin: 1rem auto;
   }
 }
-
 /*************VISTA TABLET<<<<<<<<<<<<<<< */
 @media (min-width: 620px) {
   /* ABOUT ME */
@@ -306,17 +375,16 @@ body {
     padding-right: 0.3rem;
   }
 }
-
-/**************** VISTA DESKTOP<<<<<<<<<<<<<<<< */
+/**************** VISTA DESKTOP<<<<<<<<<< */
 @media (min-width: 880px) {
   .header__container {
     display: flex;
     align-items: center;
   }
-
   .menu__list {
     visibility: visible;
     flex-direction: row;
+    align-items: center;
     gap: 1rem;
   }
   #contacto__border {
@@ -487,7 +555,7 @@ body {
   .card-content h3 {
     margin: 10px 0;
     font-size: 20px;
-    color: var(--color-tipografia2)
+    color: var(--color-tipografia2);
   }
 
   .card-content p {
@@ -496,7 +564,7 @@ body {
     margin-bottom: 10px;
   }
   .card-content a {
-    margin: .5rem;
+    margin: 0.5rem;
     color: var(--color-tipografia2);
     font-size: 1.6rem;
   }
@@ -528,18 +596,3 @@ body {
   }
 }
 
-/* Estilos de las etiquetas de tecnología */
-.tech {
-  display: inline-block;
-  background: var(--color-tipografia);
-  color: #fff;
-  font-size: 12px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  margin: 5px 3px;
-  transition: background 0.3s ease;
-}
-
-.tech:hover {
-  background: var(--color-fondo);
-}
