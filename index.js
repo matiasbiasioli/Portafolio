@@ -47,14 +47,21 @@ let typed = new Typed('.typed', {
     loopCount: false
 })
 
-// SCROLL REVEAL CODE 
-window.sr = ScrollReveal();
 
-sr.reveal('.about__container', {
-    duration: 4000,
-    reset: true
-})
+// Iniciar ScrollReveal
+const sr = ScrollReveal({
+    distance: '50px',  // Distancia de desplazamiento
+    duration: 1000,    // Duración de la animación en milisegundos
+    easing: 'ease-in-out',
+    reset: true        // Si quieres que se repita la animación al hacer scroll
+});
+
+// Aplicar animación a elementos
+sr.reveal('.about__container', { 
+    origin: 'bottom', // Desde dónde aparece (top, right, bottom, left)
+    delay: 300        // Retraso en ms antes de aparecer
+});
 sr.reveal('.portfolio-container', {
-    duration: 4000,
+    duration: 2000,
 })
 
