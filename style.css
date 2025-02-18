@@ -14,6 +14,9 @@
 body {
   background-color: var(--color-fondo);
   overflow-x: hidden;
+  h1 a {
+    color: white
+  }
   .navbar__list a {
     color: white
   }
@@ -59,9 +62,14 @@ body {
 }
 .light-mode {
   background-color: var(--color-tipografia2);
-  color: black;
+  .navbar__list {
+    background-color: white;
+  }
   .navbar__list a {
-    color: black
+    color: black;
+  }
+  .btn-dark-light {
+    border-color: black;
   }
   #contacto__border{
     color: black;
