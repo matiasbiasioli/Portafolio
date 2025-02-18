@@ -17,6 +17,15 @@ body {
   .navbar__list a {
     color: white
   }
+  .main__text p {
+    color: var(--color-tipografia);
+  }
+  .main__text h2 {
+    color: white;
+  }
+  .main__text h3 {
+    color: var(--color-tipografia)
+  }
   .about_content p {
     color: white;
   }
@@ -35,15 +44,6 @@ body {
   .card {
     background-color: var(--color-fondo2);
   }
-  p {
-    color: var(--color-tipografia);
-  }
-  h2 {
-    color: white;
-  }
-  h3 {
-    color: var(--color-tipografia);
-  }
   a {
     color: white;
   }
@@ -52,6 +52,9 @@ body {
   }
   .tech-item p {
     color: white
+  }
+  .footer__content h4 {
+    color: white;
   }
 }
 .light-mode {
@@ -62,6 +65,9 @@ body {
   }
   #contacto__border{
     color: black;
+  }
+  .main__text h2 {
+    color: black
   }
   h1 a {
     color: black;
@@ -99,15 +105,6 @@ body {
   }
   .footer__content a {
     color: black;
-  }
-  p {
-    color: var(--color-tipografia);
-  }
-  h2 {
-    color: black;
-  }
-  h3 {
-    color: var(--color-tipografia);
   }
   .typed {
     color: black;
@@ -179,17 +176,14 @@ body {
   }
   .main__text p {
     font-size: 21px;
-    /* color: var(--color-tipografia); */
   }
   .main__text h2 {
     font-size: 56px;
   }
   .main__text h3 {
     font-size: 26px;
-    /* color: var(--color-tipografia); */
   }
   .typed {
-    /* color: white; */
     font-size: 18px;
   }
   .main__button__container {
@@ -334,7 +328,6 @@ body {
     align-items: center;
     background-color: var(--color-fondo2);
     text-align: center;
-    color: white;
     height: 30vh;
     margin: 2rem auto 0 auto;
   }
@@ -343,7 +336,6 @@ body {
     margin-bottom: 1rem;
   }
   .footer__container a {
-    color: white;
     font-size: 18px;
     padding: 0.2rem;
   }
@@ -397,7 +389,6 @@ body {
     gap: 1rem;
   }
   #contacto__border {
-    color: white;
     border: 2px solid var(--color-tipografia);
     border-radius: 4px;
     padding: 5px 15px;
@@ -500,7 +491,6 @@ body {
     margin-top: 8px;
     font-size: 14px;
     font-weight: bold;
-    color: white;
   }
   /* PORTAFOLIO */
   .portfolio-title {
