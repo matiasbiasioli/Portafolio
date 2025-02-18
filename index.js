@@ -60,6 +60,7 @@ sr.reveal('.about__container', {
     delay: 300        // Retraso en ms antes de aparecer
 });
 sr.reveal('.portfolio-container', {
-    duration: 2000,
+    origin: 'bottom',
+    delay: 300
 })
 
