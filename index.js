@@ -47,7 +47,6 @@ let typed = new Typed('.typed', {
     loopCount: false
 })
 
-
 // Iniciar ScrollReveal
 const sr = ScrollReveal({
     distance: '50px',  // Distancia de desplazamiento
@@ -55,7 +54,6 @@ const sr = ScrollReveal({
     easing: 'ease-in-out',
     reset: true        // Si quieres que se repita la animación al hacer scroll
 });
-
 // Aplicar animación a elementos
 sr.reveal('.about__container', { 
     origin: 'bottom', // Desde dónde aparece (top, right, bottom, left)
