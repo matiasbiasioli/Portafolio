@@ -404,6 +404,7 @@ body {
   #contacto__border:hover {
     background-color: #00cf5d;
     transition: 0.3s;
+    color: white;
   }
   .navbar__list {
     display: flex;
