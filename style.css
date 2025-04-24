@@ -298,7 +298,6 @@ body {
   }
   .card img {
     width: 100%;
-    min-height: 240px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
   }
@@ -534,6 +533,7 @@ body {
   /* Imagen de la card */
   .card img {
     width: 100%;
+    min-height: 240px;
   }
   /* Contenido de la card */
   .card-content {
