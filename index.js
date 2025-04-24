@@ -59,8 +59,8 @@ sr.reveal('.about__container', {
     origin: 'bottom', // Desde dónde aparece (top, right, bottom, left)
     delay: 300        // Retraso en ms antes de aparecer
 });
-sr.reveal('.portfolio-container', {
-    origin: 'bottom',
-    delay: 300
-})
+// sr.reveal('.portfolio-container', {
+//     origin: 'bottom',
+//     delay: 300
+// })
 
