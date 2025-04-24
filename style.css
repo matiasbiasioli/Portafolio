@@ -74,6 +74,11 @@ body {
   #contacto__border{
     color: black;
   }
+  #contacto__border:hover {
+    background-color: #00cf5d;
+    transition: 0.3s;
+    color: white;
+  }
   .main__text h2 {
     color: black
   }
